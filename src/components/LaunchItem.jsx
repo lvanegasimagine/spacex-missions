@@ -3,6 +3,7 @@ import { Heading, Box, Image, Flex, Text, Spacer, Tag, Button, Icon } from "@cha
 import { HiCalendar } from "react-icons/hi";
 import dayjs from "dayjs";
 const LaunchItem = ({launch}) => {
+  console.log("🚀 ~ LaunchItem ~ launch:", launch)
   return (
     <Box bg="gray.100" p={4} m={4} borderRadius="lg">
             <Flex display="flex">
@@ -22,7 +23,7 @@ const LaunchItem = ({launch}) => {
                 }
               </Text>
             </Flex>
-            <Button colorScheme="purple" mt={2}> More Details </Button>
+            {/* <Button colorScheme="purple" mt={2}> More Details </Button> */}
           </Box>
   )
 }
